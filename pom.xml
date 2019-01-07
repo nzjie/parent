@@ -35,7 +35,8 @@
 		<slf4j-api.version>1.7.2</slf4j-api.version>
 		<ogback-classic.version>1.0.9</ogback-classic.version>
 		<jcl-over-slf4j.version>1.7.2</jcl-over-slf4j.version>
-		
+		<commons-net.version>3.3</commons-net.version>
+		<jsch.version>0.1.54</jsch.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -84,20 +85,20 @@
 			</dependency>
 			<!-- 日志处理 -->
 			<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>${slf4j-api.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>1.0.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>jcl-over-slf4j</artifactId>
-			<version>1.7.2</version>
-		</dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>1.0.9</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>jcl-over-slf4j</artifactId>
+				<version>1.7.2</version>
+			</dependency>
 			<!-- Mybatis -->
 			<dependency>
 				<groupId>org.mybatis</groupId>
@@ -204,6 +205,16 @@
 				<groupId>com.alibaba</groupId>
 				<artifactId>druid</artifactId>
 				<version>${druid.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-net</groupId>
+				<artifactId>commons-net</artifactId>
+				<version>${commons-net.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.jcraft</groupId>
+				<artifactId>jsch</artifactId>
+				<version>${jsch.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
