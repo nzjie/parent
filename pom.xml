@@ -16,7 +16,7 @@
 		<mysql.version>5.1.32</mysql.version>
 		<slf4j.version>1.7.2</slf4j.version>
 		<fastjson.version>1.2.47</fastjson.version>
-		<druid.version>1.0.9</druid.version>
+		<druid.version>1.1.10</druid.version>
 		<httpclient.version>4.3.5</httpclient.version>
 		<jstl.version>1.2</jstl.version>
 		<servlet-api.version>2.5</servlet-api.version>
@@ -35,8 +35,9 @@
 		<slf4j-api.version>1.7.2</slf4j-api.version>
 		<ogback-classic.version>1.0.9</ogback-classic.version>
 		<jcl-over-slf4j.version>1.7.2</jcl-over-slf4j.version>
-		<commons-net.version>3.3</commons-net.version>
 		<jsch.version>0.1.54</jsch.version>
+		<imaging.version>2.81.51407</imaging.version>
+		<mail.version>1.4.7</mail.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -158,6 +159,7 @@
 				<artifactId>spring-aspects</artifactId>
 				<version>${spring.version}</version>
 			</dependency>
+
 			<!-- JSP相关 -->
 			<dependency>
 				<groupId>jstl</groupId>
@@ -201,20 +203,19 @@
 				<version>${dom4j.vesion}</version>
 			</dependency>
 			<dependency>
-				<!-- druid连接池 -->
-				<groupId>com.alibaba</groupId>
-				<artifactId>druid</artifactId>
-				<version>${druid.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-net</groupId>
-				<artifactId>commons-net</artifactId>
-				<version>${commons-net.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>com.jcraft</groupId>
 				<artifactId>jsch</artifactId>
 				<version>${jsch.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>imaging</artifactId>
+				<version>${imaging.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.mail</groupId>
+				<artifactId>mail</artifactId>
+				<version>${mail.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
